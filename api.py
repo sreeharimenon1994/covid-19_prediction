@@ -43,5 +43,5 @@ for x in data:
     x = x['attributes']
     arr.append([x['DateVal'], x['CMODateCount']])
 
-with open("data/graph.txt", "w") as graph:
+with open("data/graph.json", "w") as graph:
     graph.write(str(arr))

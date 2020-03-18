@@ -38,7 +38,7 @@ final_y = []
 for i in range(0, len(graph)):
     final_y.append(calculateCases(coef, x_poly[i]))
 
-x_temp = [[i+len(x)] for i in range(0, predict)]
+x_temp = [[i+len(x)] for i in range(0, predictFor)]
 x_temp = features.fit_transform(x_temp)
 for i in range(len(x_temp)):
     final_y.append(calculateCases(coef, x_temp[i]))
