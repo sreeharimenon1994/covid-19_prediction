@@ -9,7 +9,7 @@ graph_init = literal_eval(open('data/graph.json','r').read())
 
 start = graph_init[0][0]
 perday = 86400000
-predictFor = 10 # number of days to be predicted
+predictFor = 5 # number of days to be predicted
 omit = 30
 degree = 2
 customDayStart = omit*perday + start
@@ -51,7 +51,7 @@ plt.xticks(rotation=90)
 plt.show()
 
 # predict for a date
-predictDate = '2020-03-18'
+predictDate = '2020-03-21'
 preDate = int(datetime.strptime(predictDate, '%Y-%m-%d').timestamp())*1000
 diffDays = int((preDate - (start+omit*perday))/perday)
 t = features.fit_transform([[diffDays]])
