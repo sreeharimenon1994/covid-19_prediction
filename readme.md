@@ -1,6 +1,6 @@
 # Linear Regression
 
-The GAN generates new handwritten digits! We train a GAN to generate new handwritten digits after showing it pictures of many real handwritten digits. The basic idea behind GAN is that you have two networks (generator and discriminator) competing against each other. The Generator makes “fake” data to pass to the discriminator. The discriminator sees both generated and real training data and predicts if the data it received is real or fake. The generator is constantly trying to outsmart the discriminator by generating better and better fakes.
+Regression analysis is one of the most important fields in statistics and machine learning. There are many regression methods available. Linear regression is one of them. In regression analysis, you usually consider some phenomenon of interest and have a number of observations. Each observation has two or more features. Following the assumption that (at least) one of the features depends on the others, you try to establish a relation among them.In other words, you need to find a function that maps some features or variables to others sufficiently well.
 
 
 ## Count and model prediction
